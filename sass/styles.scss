@@ -1,0 +1,28 @@
+$colores: (red,orange,yellow,black,green,blue,purple);
+@mixin square(){
+	border: 2px solid black;
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	height: 100px;
+	line-height: 100px;
+	position: absolute;
+	text-align: center;
+	width: 100px;
+	$size :75;
+	$cont: 0;
+    @each $color in $colores{
+    	&.s#{$cont+1}{
+    		background-color: $color;
+    		left: 0px + $size*$cont;
+			top: 525px - ($size*$cont);
+    	}
+    	$cont: $cont+1;
+    }
+}
+.container{
+	position: relative;
+}
+.square{
+	@include square();
+}

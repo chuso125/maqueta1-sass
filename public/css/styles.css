@@ -1,0 +1,41 @@
+.container {
+  position: relative; }
+
+.square {
+  border: 2px solid black;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  height: 100px;
+  line-height: 100px;
+  position: absolute;
+  text-align: center;
+  width: 100px; }
+  .square.s1 {
+    background-color: red;
+    left: 0px;
+    top: 525px; }
+  .square.s2 {
+    background-color: orange;
+    left: 75px;
+    top: 450px; }
+  .square.s3 {
+    background-color: yellow;
+    left: 150px;
+    top: 375px; }
+  .square.s4 {
+    background-color: black;
+    left: 225px;
+    top: 300px; }
+  .square.s5 {
+    background-color: green;
+    left: 300px;
+    top: 225px; }
+  .square.s6 {
+    background-color: blue;
+    left: 375px;
+    top: 150px; }
+  .square.s7 {
+    background-color: purple;
+    left: 450px;
+    top: 75px; }
